@@ -14,6 +14,9 @@ source:
   url: https://github.com/SimpleITK/SimpleITK/releases/download/v{{ version }}/SimpleITK-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
+  patches:
+    - 0001-Remove-explicit-instantiating-of-Image-of-deque-of-L.patch
+
 build:
   number: 0
   skip: true  # [ win and py27]
